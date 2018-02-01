@@ -9,6 +9,9 @@
 import UIKit
 
 class TaskThreeViewController: UIViewController {
+    
+    lazy var placeholderService: PlaceholderService = PlaceholderService()
+    var arrayOfThumbnails = [Thumbnail?]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,10 +21,9 @@ class TaskThreeViewController: UIViewController {
     
     @IBAction func makeRequestTapped(_ sender: Any) {
         
-        guard let url = NSURL(string: " https://jsonplaceholder.typicode.com/photos") else { return }
-        //let task = URLSession.shared.dataTask(with: url) { (data, urlResponse, error) in
-            
-        //}
+        placeholderService.fetchThumbnails { [unowned self] (arrayOfThumbnails) in
+            print("array of thumbnailz iz: \(arrayOfThumbnails)")
+        }
     }
     
     
