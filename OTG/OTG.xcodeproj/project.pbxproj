@@ -13,6 +13,9 @@
 		453362F32022EC3300CDC55E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 453362F12022EC3300CDC55E /* LaunchScreen.storyboard */; };
 		453362FB2022F26300CDC55E /* TaskOneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453362FA2022F26300CDC55E /* TaskOneViewController.swift */; };
 		453362FD2022FFAD00CDC55E /* TaskThreeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453362FC2022FFAD00CDC55E /* TaskThreeViewController.swift */; };
+		453362FF2023049800CDC55E /* JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453362FE2023049800CDC55E /* JSON.swift */; };
+		45336301202306B300CDC55E /* PlaceholderService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45336300202306B300CDC55E /* PlaceholderService.swift */; };
+		453363032023AF0400CDC55E /* Thumbnail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453363022023AF0400CDC55E /* Thumbnail.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		453362F42022EC3300CDC55E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		453362FA2022F26300CDC55E /* TaskOneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskOneViewController.swift; sourceTree = "<group>"; };
 		453362FC2022FFAD00CDC55E /* TaskThreeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskThreeViewController.swift; sourceTree = "<group>"; };
+		453362FE2023049800CDC55E /* JSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSON.swift; sourceTree = "<group>"; };
+		45336300202306B300CDC55E /* PlaceholderService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceholderService.swift; sourceTree = "<group>"; };
+		453363022023AF0400CDC55E /* Thumbnail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Thumbnail.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +63,9 @@
 			isa = PBXGroup;
 			children = (
 				453362E82022EC3300CDC55E /* AppDelegate.swift */,
+				453363022023AF0400CDC55E /* Thumbnail.swift */,
+				453362FE2023049800CDC55E /* JSON.swift */,
+				45336300202306B300CDC55E /* PlaceholderService.swift */,
 				453362FA2022F26300CDC55E /* TaskOneViewController.swift */,
 				453362FC2022FFAD00CDC55E /* TaskThreeViewController.swift */,
 				453362EC2022EC3300CDC55E /* Main.storyboard */,
@@ -141,7 +150,10 @@
 			files = (
 				453362FD2022FFAD00CDC55E /* TaskThreeViewController.swift in Sources */,
 				453362FB2022F26300CDC55E /* TaskOneViewController.swift in Sources */,
+				453363032023AF0400CDC55E /* Thumbnail.swift in Sources */,
 				453362E92022EC3300CDC55E /* AppDelegate.swift in Sources */,
+				45336301202306B300CDC55E /* PlaceholderService.swift in Sources */,
+				453362FF2023049800CDC55E /* JSON.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

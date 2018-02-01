@@ -16,6 +16,15 @@ class TaskThreeViewController: UIViewController {
         
     }
     
+    @IBAction func makeRequestTapped(_ sender: Any) {
+        
+        guard let url = NSURL(string: " https://jsonplaceholder.typicode.com/photos") else { return }
+        //let task = URLSession.shared.dataTask(with: url) { (data, urlResponse, error) in
+            
+        //}
+    }
+    
+    
 
     /*
     // MARK: - Navigation

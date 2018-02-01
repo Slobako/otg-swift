@@ -123,6 +123,9 @@ d) Cache all of the images locally based on their ID. </mutableString>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Fetch the thumbnails!"/>
+                                <connections>
+                                    <action selector="makeRequestTapped:" destination="6Kk-cY-orn" eventType="touchUpInside" id="5A1-gN-q0k"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
