@@ -13,6 +13,9 @@ class ThumbnailCollectionViewCell: UICollectionViewCell {
     // IBOutlets
     @IBOutlet weak var thumbnailImageView: UIImageView!
     
+    // Properties
+    lazy var imageService: ImageService = ImageService()
+    
     // MARK: - Lifecycle
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -22,11 +25,8 @@ class ThumbnailCollectionViewCell: UICollectionViewCell {
     var thumbnail: Thumbnail? {
         didSet{
             if let thumbnailUrlString = thumbnail?.thumbnailUrl {
-                if let thumbnailUrl = URL(string: thumbnailUrlString) {
                     self.thumbnailImageView.contentMode = .scaleAspectFill
-                    
-                    thumbnailImageView.downloadedFrom(link: thumbnailUrlString)
-                }
+                imageService.downloadImageFrom(urlString: thumbnailUrlString, to: thumbnailImageView)
             }
         }
     }

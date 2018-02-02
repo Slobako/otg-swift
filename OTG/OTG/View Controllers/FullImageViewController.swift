@@ -10,15 +10,19 @@ import UIKit
 
 class FullImageViewController: UIViewController {
     
+    // IBOutlets
     @IBOutlet weak var fullImageView: UIImageView!
     
+    // Properties
     var urlString: String?
+    lazy var imageService: ImageService = ImageService()
     
+    // MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
 
         if let urlString = urlString {
-            fullImageView.downloadedFrom(link: urlString)
+            imageService.downloadImageFrom(urlString: urlString, to: fullImageView)
         }
         
     }

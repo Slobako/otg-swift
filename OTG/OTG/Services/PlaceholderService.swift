@@ -23,7 +23,6 @@ struct PlaceholderService {
                     guard let data = data else { return }
                     var arrayOfThumbnails = [Thumbnail]()
                     if let responseObject = try JSONSerialization.jsonObject(with: data) as? [[String: Any]] {
-                        
                         for object in responseObject {
                             if let thumbnail = Thumbnail(json: object) {
                                 arrayOfThumbnails.append(thumbnail)
@@ -31,11 +30,9 @@ struct PlaceholderService {
                         }
                         completion(arrayOfThumbnails)
                     }
-                    
                 } catch let error {
                     print("Error occured: \(error)")
                 }
-                
             } else {
                 if let error = error {
                     print(error.localizedDescription)
