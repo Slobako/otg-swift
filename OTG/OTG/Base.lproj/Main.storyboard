@@ -228,6 +228,9 @@ d) Cache all of the images locally based on their ID. </mutableString>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Show me birthdays per month!"/>
+                                <connections>
+                                    <action selector="showMeTapped:" destination="t5f-X5-DQC" eventType="touchUpInside" id="GVx-zp-ahe"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="12" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xPs-lT-IPy">
                                 <rect key="frame" x="20" y="353.5" width="335" height="0.0"/>
@@ -252,6 +255,9 @@ d) Cache all of the images locally based on their ID. </mutableString>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="NhU-Gq-wYa"/>
                     </view>
+                    <connections>
+                        <outlet property="outputLabel" destination="xPs-lT-IPy" id="gk6-ZG-Kjo"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="niG-zE-02h" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

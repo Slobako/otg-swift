@@ -35,11 +35,10 @@ class ThumbnailCollectionViewCell: UICollectionViewCell {
     
     // Helper methods for image download
     func downloadImage(url: URL) {
-        print("Download Started")
+        print("Download started")
         getDataFromUrl(url: url) { data, response, error in
             guard let data = data, error == nil else { return }
-            print(response?.suggestedFilename ?? url.lastPathComponent)
-            print("Download Finished")
+            print("Download finished")
             DispatchQueue.main.async() {
                 self.thumbnailImageView.image = UIImage(data: data)
             }
