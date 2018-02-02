@@ -52,7 +52,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EPP-gJ-2pg">
-                                <rect key="frame" x="50" y="577" width="275" height="50"/>
+                                <rect key="frame" x="50" y="617" width="275" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="izw-n3-5dJ"/>
                                 </constraints>
@@ -66,7 +66,7 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="v53-51-RhK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Bj0-hA-Qed"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="EPP-gJ-2pg" secondAttribute="bottom" constant="40" id="Btt-8R-NLP"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="EPP-gJ-2pg" secondAttribute="bottom" id="Btt-8R-NLP"/>
                             <constraint firstItem="kaz-hQ-gID" firstAttribute="top" secondItem="M9n-mJ-GpY" secondAttribute="bottom" constant="23" id="IcJ-9f-ziH"/>
                             <constraint firstItem="65a-Aw-KKB" firstAttribute="top" secondItem="kaz-hQ-gID" secondAttribute="bottom" constant="36" id="MKY-4u-Otq"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="EPP-gJ-2pg" secondAttribute="trailing" constant="50" id="MQu-82-Ssj"/>
@@ -209,9 +209,16 @@ d) Cache all of the images locally based on their ID. </mutableString>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="kbd-QH-Jh4">
-                                <rect key="frame" x="48" y="84" width="307" height="179.5"/>
-                                <string key="text">Create a program that loads birthdays.json file from disk, extracts the months of all the birthdays and counts how many people have a birthday in each month. It should output something like:
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="18" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="kbd-QH-Jh4">
+                                <rect key="frame" x="48" y="84" width="307" height="286.5"/>
+                                <string key="text">Create a program that loads birthdays.json: {
+    "Albert Einstein": "03/14/1879",
+    "Benjamin Franklin": "01/17/1706",
+    "Ada Lovelace": "12/10/1815",
+    "Donald Trump": "06/14/1946",
+    "Rowan Atkinson": "01/6/1955"
+}
+ file from disk, extracts the months of all the birthdays and counts how many people have a birthday in each month. It should output something like:
 {
 	"May": 3,
 	"November": 2,
@@ -222,7 +229,7 @@ d) Cache all of the images locally based on their ID. </mutableString>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="KpB-dn-Eyl">
-                                <rect key="frame" x="20" y="283.5" width="335" height="50"/>
+                                <rect key="frame" x="20" y="390.5" width="335" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="ZBG-qe-0AB"/>
                                 </constraints>
@@ -233,7 +240,7 @@ d) Cache all of the images locally based on their ID. </mutableString>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="12" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xPs-lT-IPy">
-                                <rect key="frame" x="20" y="353.5" width="335" height="0.0"/>
+                                <rect key="frame" x="45" y="450.5" width="310" height="0.0"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -243,9 +250,9 @@ d) Cache all of the images locally based on their ID. </mutableString>
                         <constraints>
                             <constraint firstItem="NhU-Gq-wYa" firstAttribute="trailing" secondItem="KpB-dn-Eyl" secondAttribute="trailing" constant="20" id="9q8-nU-Mz4"/>
                             <constraint firstItem="ggJ-qg-6LF" firstAttribute="leading" secondItem="NhU-Gq-wYa" secondAttribute="leading" constant="20" id="B3h-DQ-3Hd"/>
-                            <constraint firstItem="xPs-lT-IPy" firstAttribute="top" secondItem="KpB-dn-Eyl" secondAttribute="bottom" constant="20" id="Fed-dC-lKN"/>
+                            <constraint firstItem="xPs-lT-IPy" firstAttribute="top" secondItem="KpB-dn-Eyl" secondAttribute="bottom" constant="10" id="Fed-dC-lKN"/>
                             <constraint firstItem="KpB-dn-Eyl" firstAttribute="top" secondItem="kbd-QH-Jh4" secondAttribute="bottom" constant="20" id="I4i-tq-bus"/>
-                            <constraint firstItem="xPs-lT-IPy" firstAttribute="leading" secondItem="NhU-Gq-wYa" secondAttribute="leading" constant="20" id="O3G-Eb-Gqz"/>
+                            <constraint firstItem="xPs-lT-IPy" firstAttribute="leading" secondItem="NhU-Gq-wYa" secondAttribute="leading" constant="45" id="O3G-Eb-Gqz"/>
                             <constraint firstItem="kbd-QH-Jh4" firstAttribute="leading" secondItem="ggJ-qg-6LF" secondAttribute="trailing" constant="5" id="Q57-3O-EoN"/>
                             <constraint firstItem="KpB-dn-Eyl" firstAttribute="leading" secondItem="NhU-Gq-wYa" secondAttribute="leading" constant="20" id="RGI-6C-zfL"/>
                             <constraint firstItem="NhU-Gq-wYa" firstAttribute="trailing" secondItem="xPs-lT-IPy" secondAttribute="trailing" constant="20" id="TZ2-5e-BjN"/>
