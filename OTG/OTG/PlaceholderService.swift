@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import UIKit
 
 struct PlaceholderService {
     
@@ -28,7 +29,6 @@ struct PlaceholderService {
                                 arrayOfThumbnails.append(thumbnail)
                             }
                         }
-                        print("thumbnails AAARRREEE: \(arrayOfThumbnails)")
                         completion(arrayOfThumbnails)
                     }
                     
@@ -44,4 +44,5 @@ struct PlaceholderService {
         }
         task.resume()
     }
+    
 }

@@ -117,9 +117,9 @@ d) Cache all of the images locally based on their ID. </mutableString>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6QM-gF-h7H">
-                                <rect key="frame" x="50" y="289" width="275" height="50"/>
+                                <rect key="frame" x="50" y="279.5" width="275" height="40"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="Ql8-J2-b2v"/>
+                                    <constraint firstAttribute="height" constant="40" id="Ql8-J2-b2v"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Fetch the thumbnails!"/>
@@ -127,20 +127,51 @@ d) Cache all of the images locally based on their ID. </mutableString>
                                     <action selector="makeRequestTapped:" destination="6Kk-cY-orn" eventType="touchUpInside" id="5A1-gN-q0k"/>
                                 </connections>
                             </button>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="J1n-Rq-51Z">
+                                <rect key="frame" x="0.0" y="319.5" width="375" height="347.5"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="xdY-7j-BZI">
+                                    <size key="itemSize" width="80" height="80"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="" id="gix-n7-f5o" customClass="ThumbnailCollectionViewCell" customModule="OTG" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </view>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="6Kk-cY-orn" id="DC9-nB-Dl6"/>
+                                    <outlet property="delegate" destination="6Kk-cY-orn" id="y6p-Mn-51I"/>
+                                </connections>
+                            </collectionView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="PY7-OQ-wnP" firstAttribute="bottom" secondItem="J1n-Rq-51Z" secondAttribute="bottom" id="1WE-HF-CgU"/>
                             <constraint firstItem="KWG-UL-bvu" firstAttribute="top" secondItem="nX2-B2-Qk7" secondAttribute="top" id="9me-jV-ChJ"/>
                             <constraint firstItem="PY7-OQ-wnP" firstAttribute="trailing" secondItem="6QM-gF-h7H" secondAttribute="trailing" constant="50" id="Ftd-wL-voY"/>
                             <constraint firstItem="nX2-B2-Qk7" firstAttribute="leading" secondItem="PY7-OQ-wnP" secondAttribute="leading" constant="20" id="GuF-Gg-cHM"/>
+                            <constraint firstItem="PY7-OQ-wnP" firstAttribute="trailing" secondItem="J1n-Rq-51Z" secondAttribute="trailing" id="HIM-sN-iO3"/>
                             <constraint firstAttribute="trailing" secondItem="KWG-UL-bvu" secondAttribute="trailing" constant="20" id="Opw-r0-Y2b"/>
                             <constraint firstItem="nX2-B2-Qk7" firstAttribute="top" secondItem="PY7-OQ-wnP" secondAttribute="top" constant="20" id="SW5-BJ-AuE"/>
-                            <constraint firstItem="6QM-gF-h7H" firstAttribute="top" secondItem="KWG-UL-bvu" secondAttribute="bottom" constant="20" id="WCc-Ql-VPm"/>
+                            <constraint firstItem="6QM-gF-h7H" firstAttribute="top" secondItem="KWG-UL-bvu" secondAttribute="bottom" constant="10" id="WCc-Ql-VPm"/>
+                            <constraint firstItem="J1n-Rq-51Z" firstAttribute="leading" secondItem="PY7-OQ-wnP" secondAttribute="leading" id="Zzf-oK-tdq"/>
                             <constraint firstItem="6QM-gF-h7H" firstAttribute="leading" secondItem="PY7-OQ-wnP" secondAttribute="leading" constant="50" id="dKv-vd-wUF"/>
                             <constraint firstItem="KWG-UL-bvu" firstAttribute="leading" secondItem="nX2-B2-Qk7" secondAttribute="trailing" constant="5" id="ha5-Ju-WKh"/>
+                            <constraint firstItem="J1n-Rq-51Z" firstAttribute="top" secondItem="6QM-gF-h7H" secondAttribute="bottom" id="r6o-V0-dNc"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="PY7-OQ-wnP"/>
                     </view>
+                    <connections>
+                        <outlet property="thumbnailCollectionView" destination="J1n-Rq-51Z" id="tbL-Ze-GFc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="E57-zm-2E4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
