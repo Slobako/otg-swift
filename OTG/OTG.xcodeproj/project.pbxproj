@@ -20,6 +20,7 @@
 		453363092023D5B500CDC55E /* UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453363082023D5B500CDC55E /* UIImageView.swift */; };
 		4533630B2023E6A900CDC55E /* FullImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4533630A2023E6A900CDC55E /* FullImageViewController.swift */; };
 		453363122023F5B200CDC55E /* birthdays.json in Resources */ = {isa = PBXBuildFile; fileRef = 453363112023F5B200CDC55E /* birthdays.json */; };
+		453363142023F9D100CDC55E /* TaskFourViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453363132023F9D100CDC55E /* TaskFourViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		453363082023D5B500CDC55E /* UIImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageView.swift; sourceTree = "<group>"; };
 		4533630A2023E6A900CDC55E /* FullImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullImageViewController.swift; sourceTree = "<group>"; };
 		453363112023F5B200CDC55E /* birthdays.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = birthdays.json; sourceTree = "<group>"; };
+		453363132023F9D100CDC55E /* TaskFourViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskFourViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +93,7 @@
 				453362FA2022F26300CDC55E /* TaskOneViewController.swift */,
 				453362FC2022FFAD00CDC55E /* TaskThreeViewController.swift */,
 				4533630A2023E6A900CDC55E /* FullImageViewController.swift */,
+				453363132023F9D100CDC55E /* TaskFourViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -207,6 +210,7 @@
 				453363062023CEAF00CDC55E /* ThumbnailCollectionViewCell.swift in Sources */,
 				453362FB2022F26300CDC55E /* TaskOneViewController.swift in Sources */,
 				453363032023AF0400CDC55E /* Thumbnail.swift in Sources */,
+				453363142023F9D100CDC55E /* TaskFourViewController.swift in Sources */,
 				4533630B2023E6A900CDC55E /* FullImageViewController.swift in Sources */,
 				453362E92022EC3300CDC55E /* AppDelegate.swift in Sources */,
 				45336301202306B300CDC55E /* PlaceholderService.swift in Sources */,
