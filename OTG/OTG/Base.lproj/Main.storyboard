@@ -177,5 +177,34 @@ d) Cache all of the images locally based on their ID. </mutableString>
             </objects>
             <point key="canvasLocation" x="1006" y="134"/>
         </scene>
+        <!--Full Image View Controller-->
+        <scene sceneID="sIi-ud-YtI">
+            <objects>
+                <viewController storyboardIdentifier="FullImage" id="eNV-yb-FFP" customClass="FullImageViewController" customModule="OTG" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="eWx-TI-fZD">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="V7s-1p-LrB">
+                                <rect key="frame" x="20" y="120" width="335" height="447"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="V7s-1p-LrB" firstAttribute="top" secondItem="HEo-G4-AYd" secondAttribute="top" constant="100" id="7st-NY-MIR"/>
+                            <constraint firstItem="HEo-G4-AYd" firstAttribute="bottom" secondItem="V7s-1p-LrB" secondAttribute="bottom" constant="100" id="Bux-Pq-GuC"/>
+                            <constraint firstItem="HEo-G4-AYd" firstAttribute="trailing" secondItem="V7s-1p-LrB" secondAttribute="trailing" constant="20" id="lce-X5-1Ri"/>
+                            <constraint firstItem="V7s-1p-LrB" firstAttribute="leading" secondItem="HEo-G4-AYd" secondAttribute="leading" constant="20" id="qFe-96-OA7"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="HEo-G4-AYd"/>
+                    </view>
+                    <connections>
+                        <outlet property="fullImageView" destination="V7s-1p-LrB" id="KmD-Tk-HuZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yxY-DX-QoA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1014" y="900"/>
+        </scene>
     </scenes>
 </document>

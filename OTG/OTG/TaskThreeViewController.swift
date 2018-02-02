@@ -43,16 +43,28 @@ class TaskThreeViewController: UIViewController, UICollectionViewDelegate, UICol
         return cell
     }
     
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        
+        let fullImageViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "FullImage") as! FullImageViewController
+        
+        // Add navigation bar and done button to full image view
+        let navigationController = UINavigationController(rootViewController: fullImageViewController)
+        fullImageViewController.navigationItem.leftBarButtonItem = createBackButton()
+        if let urlString = arrayOfThumbnails[indexPath.row]?.url {
+            fullImageViewController.urlString = urlString
+        }
+        
+        present(navigationController, animated: true, completion: nil)
     }
-    */
+    
+    // Creates back button for navigation bar on modally presented views
+    func createBackButton() -> UIBarButtonItem {
+        let backButton = UIBarButtonItem(barButtonSystemItem: .done, target: self, action: #selector(dismissModal))
+        return backButton
+    }
+    
+    @objc func dismissModal() {
+        dismiss(animated: true, completion: nil)
+    }
 
 }

@@ -18,6 +18,7 @@
 		453363062023CEAF00CDC55E /* ThumbnailCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453363042023CEAF00CDC55E /* ThumbnailCollectionViewCell.swift */; };
 		453363072023CEAF00CDC55E /* ThumbnailCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 453363052023CEAF00CDC55E /* ThumbnailCollectionViewCell.xib */; };
 		453363092023D5B500CDC55E /* UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453363082023D5B500CDC55E /* UIImageView.swift */; };
+		4533630B2023E6A900CDC55E /* FullImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4533630A2023E6A900CDC55E /* FullImageViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		453363042023CEAF00CDC55E /* ThumbnailCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThumbnailCollectionViewCell.swift; sourceTree = "<group>"; };
 		453363052023CEAF00CDC55E /* ThumbnailCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ThumbnailCollectionViewCell.xib; sourceTree = "<group>"; };
 		453363082023D5B500CDC55E /* UIImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageView.swift; sourceTree = "<group>"; };
+		4533630A2023E6A900CDC55E /* FullImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullImageViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +74,7 @@
 				45336300202306B300CDC55E /* PlaceholderService.swift */,
 				453362FA2022F26300CDC55E /* TaskOneViewController.swift */,
 				453362FC2022FFAD00CDC55E /* TaskThreeViewController.swift */,
+				4533630A2023E6A900CDC55E /* FullImageViewController.swift */,
 				453363042023CEAF00CDC55E /* ThumbnailCollectionViewCell.swift */,
 				453363052023CEAF00CDC55E /* ThumbnailCollectionViewCell.xib */,
 				453362EC2022EC3300CDC55E /* Main.storyboard */,
@@ -160,6 +163,7 @@
 				453363062023CEAF00CDC55E /* ThumbnailCollectionViewCell.swift in Sources */,
 				453362FB2022F26300CDC55E /* TaskOneViewController.swift in Sources */,
 				453363032023AF0400CDC55E /* Thumbnail.swift in Sources */,
+				4533630B2023E6A900CDC55E /* FullImageViewController.swift in Sources */,
 				453362E92022EC3300CDC55E /* AppDelegate.swift in Sources */,
 				45336301202306B300CDC55E /* PlaceholderService.swift in Sources */,
 			);
