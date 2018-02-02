@@ -24,31 +24,11 @@ class ThumbnailCollectionViewCell: UICollectionViewCell {
             if let thumbnailUrlString = thumbnail?.thumbnailUrl {
                 if let thumbnailUrl = URL(string: thumbnailUrlString) {
                     self.thumbnailImageView.contentMode = .scaleAspectFill
-                    downloadImage(url: thumbnailUrl)
                     
-                    // Using func from extension:
-                    //thumbnailImageView.downloadedFrom(link: thumbnailUrlString)
+                    thumbnailImageView.downloadedFrom(link: thumbnailUrlString)
                 }
             }
         }
-    }
-    
-    // Helper methods for image download
-    func downloadImage(url: URL) {
-        print("Download started")
-        getDataFromUrl(url: url) { data, response, error in
-            guard let data = data, error == nil else { return }
-            print("Download finished")
-            DispatchQueue.main.async() {
-                self.thumbnailImageView.image = UIImage(data: data)
-            }
-        }
-    }
-    
-    func getDataFromUrl(url: URL, completion: @escaping (Data?, URLResponse?, Error?) -> ()) {
-        URLSession.shared.dataTask(with: url) { data, response, error in
-            completion(data, response, error)
-            }.resume()
     }
 
 }

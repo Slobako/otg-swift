@@ -10,9 +10,10 @@ import Foundation
 import UIKit
 
 extension UIImageView {
-    func downloadedFrom(url: URL, contentMode mode: UIViewContentMode = .scaleAspectFit) {
-        contentMode = mode
-        URLSession.shared.dataTask(with: url) { data, response, error in
+    
+    func downloadedFrom(link: String) {
+        guard let url = URL(string: link) else { return }
+        let task = URLSession.shared.dataTask(with: url) { data, response, error in
             guard
                 let httpURLResponse = response as? HTTPURLResponse, httpURLResponse.statusCode == 200,
                 let mimeType = response?.mimeType, mimeType.hasPrefix("image"),
@@ -22,11 +23,7 @@ extension UIImageView {
             DispatchQueue.main.async() {
                 self.image = image
             }
-            }.resume()
-    }
-    
-    func downloadedFrom(link: String, contentMode mode: UIViewContentMode = .scaleAspectFill) {
-        guard let url = URL(string: link) else { return }
-        downloadedFrom(url: url, contentMode: mode)
+        }
+        task.resume()
     }
 }
