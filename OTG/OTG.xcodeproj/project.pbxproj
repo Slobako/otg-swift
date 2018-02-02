@@ -19,6 +19,7 @@
 		453363072023CEAF00CDC55E /* ThumbnailCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 453363052023CEAF00CDC55E /* ThumbnailCollectionViewCell.xib */; };
 		453363092023D5B500CDC55E /* UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453363082023D5B500CDC55E /* UIImageView.swift */; };
 		4533630B2023E6A900CDC55E /* FullImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4533630A2023E6A900CDC55E /* FullImageViewController.swift */; };
+		453363122023F5B200CDC55E /* birthdays.json in Resources */ = {isa = PBXBuildFile; fileRef = 453363112023F5B200CDC55E /* birthdays.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		453363052023CEAF00CDC55E /* ThumbnailCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ThumbnailCollectionViewCell.xib; sourceTree = "<group>"; };
 		453363082023D5B500CDC55E /* UIImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageView.swift; sourceTree = "<group>"; };
 		4533630A2023E6A900CDC55E /* FullImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullImageViewController.swift; sourceTree = "<group>"; };
+		453363112023F5B200CDC55E /* birthdays.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = birthdays.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,20 +71,61 @@
 			isa = PBXGroup;
 			children = (
 				453362E82022EC3300CDC55E /* AppDelegate.swift */,
-				453363082023D5B500CDC55E /* UIImageView.swift */,
-				453363022023AF0400CDC55E /* Thumbnail.swift */,
-				45336300202306B300CDC55E /* PlaceholderService.swift */,
-				453362FA2022F26300CDC55E /* TaskOneViewController.swift */,
-				453362FC2022FFAD00CDC55E /* TaskThreeViewController.swift */,
-				4533630A2023E6A900CDC55E /* FullImageViewController.swift */,
-				453363042023CEAF00CDC55E /* ThumbnailCollectionViewCell.swift */,
-				453363052023CEAF00CDC55E /* ThumbnailCollectionViewCell.xib */,
+				453363102023F49400CDC55E /* Extensions */,
+				4533630E2023F47A00CDC55E /* Models */,
+				4533630F2023F48A00CDC55E /* Services */,
+				4533630D2023F46800CDC55E /* Views */,
+				4533630C2023F45400CDC55E /* View Controllers */,
 				453362EC2022EC3300CDC55E /* Main.storyboard */,
 				453362EF2022EC3300CDC55E /* Assets.xcassets */,
+				453363112023F5B200CDC55E /* birthdays.json */,
 				453362F12022EC3300CDC55E /* LaunchScreen.storyboard */,
 				453362F42022EC3300CDC55E /* Info.plist */,
 			);
 			path = OTG;
+			sourceTree = "<group>";
+		};
+		4533630C2023F45400CDC55E /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				453362FA2022F26300CDC55E /* TaskOneViewController.swift */,
+				453362FC2022FFAD00CDC55E /* TaskThreeViewController.swift */,
+				4533630A2023E6A900CDC55E /* FullImageViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		4533630D2023F46800CDC55E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				453363042023CEAF00CDC55E /* ThumbnailCollectionViewCell.swift */,
+				453363052023CEAF00CDC55E /* ThumbnailCollectionViewCell.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		4533630E2023F47A00CDC55E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				453363022023AF0400CDC55E /* Thumbnail.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		4533630F2023F48A00CDC55E /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				45336300202306B300CDC55E /* PlaceholderService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		453363102023F49400CDC55E /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				453363082023D5B500CDC55E /* UIImageView.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -144,6 +187,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				453363122023F5B200CDC55E /* birthdays.json in Resources */,
 				453362F32022EC3300CDC55E /* LaunchScreen.storyboard in Resources */,
 				453362F02022EC3300CDC55E /* Assets.xcassets in Resources */,
 				453362EE2022EC3300CDC55E /* Main.storyboard in Resources */,

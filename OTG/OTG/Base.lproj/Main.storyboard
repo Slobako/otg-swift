@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="JXR-FB-i1d">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -19,7 +20,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v53-51-RhK">
-                                <rect key="frame" x="20" y="50" width="20" height="30"/>
+                                <rect key="frame" x="20" y="94" width="20" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="Tsh-B7-8z0"/>
                                     <constraint firstAttribute="width" constant="20" id="oWW-uK-pjY"/>
@@ -29,13 +30,13 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Type in any integer and find out how many &quot;1&quot; are there in its binary representation." lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M9n-mJ-GpY">
-                                <rect key="frame" x="45" y="50" width="310" height="72"/>
+                                <rect key="frame" x="45" y="94" width="310" height="72"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kaz-hQ-gID">
-                                <rect key="frame" x="162.5" y="145" width="50" height="30"/>
+                                <rect key="frame" x="162.5" y="189" width="50" height="30"/>
                                 <color key="backgroundColor" red="1" green="0.947546351668901" blue="0.45244554401851667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="50" id="aSF-7p-itU"/>
@@ -45,7 +46,7 @@
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="done"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="There are: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="65a-Aw-KKB">
-                                <rect key="frame" x="45" y="211" width="92" height="24"/>
+                                <rect key="frame" x="45" y="255" width="92" height="24"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -79,6 +80,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" id="ew8-Z5-nus"/>
                     <connections>
                         <outlet property="integerTextField" destination="kaz-hQ-gID" id="vrw-Xl-q53"/>
                         <outlet property="resultLabel" destination="65a-Aw-KKB" id="r6K-k9-cjB"/>
@@ -86,7 +88,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
+            <point key="canvasLocation" x="476" y="133.5832083958021"/>
         </scene>
         <!--Task Three View Controller-->
         <scene sceneID="Y9N-eA-KAs">
@@ -97,7 +99,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nX2-B2-Qk7">
-                                <rect key="frame" x="20" y="40" width="22" height="30"/>
+                                <rect key="frame" x="20" y="84" width="22" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="22" id="K4q-fE-EFv"/>
                                     <constraint firstAttribute="height" constant="30" id="LV8-Yb-WWT"/>
@@ -107,7 +109,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="12" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="KWG-UL-bvu">
-                                <rect key="frame" x="47" y="40" width="308" height="229.5"/>
+                                <rect key="frame" x="47" y="84" width="308" height="229.5"/>
                                 <mutableString key="text">a) Make a request to: https://jsonplaceholder.typicode.com/photos
 b) Display thumbnail versions of the images in the returned JSON. Images should be loaded asynchronously. Do not use any third party libraries.
 c) If a thumbnail is tapped it should switch to another view to show the full size image.
@@ -117,7 +119,7 @@ d) Cache all of the images locally based on their ID. </mutableString>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6QM-gF-h7H">
-                                <rect key="frame" x="50" y="279.5" width="275" height="40"/>
+                                <rect key="frame" x="50" y="323.5" width="275" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="Ql8-J2-b2v"/>
                                 </constraints>
@@ -128,7 +130,7 @@ d) Cache all of the images locally based on their ID. </mutableString>
                                 </connections>
                             </button>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="J1n-Rq-51Z">
-                                <rect key="frame" x="0.0" y="319.5" width="375" height="347.5"/>
+                                <rect key="frame" x="0.0" y="363.5" width="375" height="303.5"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="xdY-7j-BZI">
                                     <size key="itemSize" width="80" height="80"/>
@@ -175,7 +177,7 @@ d) Cache all of the images locally based on their ID. </mutableString>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="E57-zm-2E4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1006" y="134"/>
+            <point key="canvasLocation" x="1344.8" y="133.5832083958021"/>
         </scene>
         <!--Full Image View Controller-->
         <scene sceneID="sIi-ud-YtI">
@@ -185,14 +187,16 @@ d) Cache all of the images locally based on their ID. </mutableString>
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="V7s-1p-LrB">
-                                <rect key="frame" x="20" y="120" width="335" height="447"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="V7s-1p-LrB">
+                                <rect key="frame" x="20" y="120" width="335" height="335"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="V7s-1p-LrB" secondAttribute="height" multiplier="1:1" id="p5x-ZX-Pv6"/>
+                                </constraints>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="V7s-1p-LrB" firstAttribute="top" secondItem="HEo-G4-AYd" secondAttribute="top" constant="100" id="7st-NY-MIR"/>
-                            <constraint firstItem="HEo-G4-AYd" firstAttribute="bottom" secondItem="V7s-1p-LrB" secondAttribute="bottom" constant="100" id="Bux-Pq-GuC"/>
                             <constraint firstItem="HEo-G4-AYd" firstAttribute="trailing" secondItem="V7s-1p-LrB" secondAttribute="trailing" constant="20" id="lce-X5-1Ri"/>
                             <constraint firstItem="V7s-1p-LrB" firstAttribute="leading" secondItem="HEo-G4-AYd" secondAttribute="leading" constant="20" id="qFe-96-OA7"/>
                         </constraints>
@@ -204,7 +208,25 @@ d) Cache all of the images locally based on their ID. </mutableString>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yxY-DX-QoA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1014" y="900"/>
+            <point key="canvasLocation" x="1345" y="851"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="4gH-mh-vP1">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="JXR-FB-i1d" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="GuK-Qe-BAO">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="1tE-eu-FEp"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dhJ-VQ-lFU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-422" y="134"/>
         </scene>
     </scenes>
 </document>

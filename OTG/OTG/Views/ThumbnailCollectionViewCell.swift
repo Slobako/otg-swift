@@ -10,8 +10,10 @@ import UIKit
 
 class ThumbnailCollectionViewCell: UICollectionViewCell {
     
+    // IBOutlets
     @IBOutlet weak var thumbnailImageView: UIImageView!
     
+    // MARK: - Lifecycle
     override func awakeFromNib() {
         super.awakeFromNib()
 
@@ -31,6 +33,7 @@ class ThumbnailCollectionViewCell: UICollectionViewCell {
         }
     }
     
+    // Helper methods for image download
     func downloadImage(url: URL) {
         print("Download Started")
         getDataFromUrl(url: url) { data, response, error in

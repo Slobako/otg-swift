@@ -10,13 +10,10 @@ import UIKit
 
 class FullImageViewController: UIViewController {
     
-    // IBOutlets
     @IBOutlet weak var fullImageView: UIImageView!
     
-    // Properties
     var urlString: String?
     
-    // MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
 

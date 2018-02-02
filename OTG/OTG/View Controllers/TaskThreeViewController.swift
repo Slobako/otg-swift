@@ -10,17 +10,21 @@ import UIKit
 
 class TaskThreeViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
     
+    // IBOutlets
     @IBOutlet weak var thumbnailCollectionView: UICollectionView!
     
+    // Properties
     lazy var placeholderService: PlaceholderService = PlaceholderService()
     var arrayOfThumbnails = [Thumbnail?]()
 
+    // MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
 
         thumbnailCollectionView.register(UINib(nibName: "ThumbnailCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "ThumbnailCell")
     }
     
+    // MARK: - IBActions
     @IBAction func makeRequestTapped(_ sender: Any) {
         
         placeholderService.fetchThumbnails { [unowned self] (arrayOfThumbnails) in
@@ -50,6 +54,8 @@ class TaskThreeViewController: UIViewController, UICollectionViewDelegate, UICol
         // Add navigation bar and done button to full image view
         let navigationController = UINavigationController(rootViewController: fullImageViewController)
         fullImageViewController.navigationItem.leftBarButtonItem = createBackButton()
+        
+        // Set url of image to bi displayed
         if let urlString = arrayOfThumbnails[indexPath.row]?.url {
             fullImageViewController.urlString = urlString
         }
