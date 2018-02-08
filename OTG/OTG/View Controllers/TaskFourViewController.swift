@@ -46,10 +46,15 @@ class TaskFourViewController: UIViewController {
             arrayOfValues.append(String(describing: cutMonth!))
         }
         
-        var birthdayCount: [String: Int] = [:]
+//        var birthdayCount: [String: Int] = [:]
+//
+//        arrayOfValues.forEach { birthdayCount[$0, default: 0] += 1 }
+//        print("birtday count \(birthdayCount)")
         
-        arrayOfValues.forEach { birthdayCount[$0, default: 0] += 1 }
-        print("birtday count \(birthdayCount)")
+        // option with reduce((into: [:])
+        let birthdayCount = arrayOfValues.reduce(into: [:]) { (birthdayCount, month) in
+            birthdayCount[month, default: 0] += 1
+        }
         
         let arrayOfMonthsAndBirthdays = convertMonthNumberIntoName(dict: birthdayCount)
         return arrayOfMonthsAndBirthdays
