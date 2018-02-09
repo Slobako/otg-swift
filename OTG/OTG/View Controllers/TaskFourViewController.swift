@@ -35,7 +35,6 @@ class TaskFourViewController: UIViewController {
             }
             self.outputLabel.text = labelText
         }
-        
     }
     
     func countBirthdaysPerMonthIn(dict: [String: String]) -> [[String: Int]] {
@@ -47,14 +46,14 @@ class TaskFourViewController: UIViewController {
         }
         
 //        var birthdayCount: [String: Int] = [:]
-//
 //        arrayOfValues.forEach { birthdayCount[$0, default: 0] += 1 }
-//        print("birtday count \(birthdayCount)")
         
         // option with reduce((into: [:])
         let birthdayCount = arrayOfValues.reduce(into: [:]) { (birthdayCount, month) in
             birthdayCount[month, default: 0] += 1
         }
+        
+        print("birtday count: \(birthdayCount)")
         
         let arrayOfMonthsAndBirthdays = convertMonthNumberIntoName(dict: birthdayCount)
         return arrayOfMonthsAndBirthdays

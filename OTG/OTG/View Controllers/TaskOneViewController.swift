@@ -67,7 +67,9 @@ class TaskOneViewController: UIViewController, UITextFieldDelegate {
         
         var a = n
         var ones = 0
-        
+        // ex. 7(bin) = 111
+        // 111(7) & 110(6) -> 110(6) & 101(5) -> 100(4) & 011(3) -> 0
+        // 7(bin) comes down to 0 in 3 iterations, which is the number of 1's
         while a > 0 {
             a &= (a-1)
             ones += 1

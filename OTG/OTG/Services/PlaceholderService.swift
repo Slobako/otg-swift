@@ -31,7 +31,7 @@ struct PlaceholderService {
                         completion(arrayOfThumbnails)
                     }
                 } catch let error {
-                    print("Error occured: \(error)")
+                    print("Error occured: \(error.localizedDescription)")
                 }
             } else {
                 if let error = error {

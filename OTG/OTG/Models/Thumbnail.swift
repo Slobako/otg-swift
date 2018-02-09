@@ -30,5 +30,3 @@ struct Thumbnail {
         self.thumbnailUrl = thumbnailUrl
     }
 }
-
-

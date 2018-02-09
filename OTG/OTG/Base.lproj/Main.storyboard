@@ -110,10 +110,10 @@
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="12" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="KWG-UL-bvu">
                                 <rect key="frame" x="47" y="84" width="308" height="197"/>
-                                <mutableString key="text">a) Make a request to: https://jsonplaceholder.typicode.com/photos
+                                <string key="text">a) Make a request to: https://jsonplaceholder.typicode.com/photos
 b) Display thumbnail versions of the images in the returned JSON. Images should be loaded asynchronously. Do not use any third party libraries.
 c) If a thumbnail is tapped it should switch to another view to show the full size image.
-d) Cache all of the images locally based on their ID. </mutableString>
+d) Cache all of the images locally based on their ID. </string>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -139,7 +139,7 @@ d) Cache all of the images locally based on their ID. </mutableString>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="" id="gix-n7-f5o" customClass="ThumbnailCollectionViewCell" customModule="OTG" customModuleProvider="target">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ThumbnailCell" id="gix-n7-f5o" customClass="ThumbnailCollectionViewCell" customModule="OTG" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
@@ -189,7 +189,7 @@ d) Cache all of the images locally based on their ID. </mutableString>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="E57-zm-2E4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1344.8" y="133.5832083958021"/>
+            <point key="canvasLocation" x="1004" y="134"/>
         </scene>
         <!--Task Four View Controller-->
         <scene sceneID="qSV-og-NTn">
@@ -268,7 +268,7 @@ d) Cache all of the images locally based on their ID. </mutableString>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="niG-zE-02h" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2220" y="130"/>
+            <point key="canvasLocation" x="1576" y="134"/>
         </scene>
         <!--Full Image View Controller-->
         <scene sceneID="sIi-ud-YtI">
@@ -299,7 +299,7 @@ d) Cache all of the images locally based on their ID. </mutableString>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yxY-DX-QoA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1345" y="851"/>
+            <point key="canvasLocation" x="1004" y="915"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="4gH-mh-vP1">
@@ -317,7 +317,7 @@ d) Cache all of the images locally based on their ID. </mutableString>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dhJ-VQ-lFU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-422" y="134"/>
+            <point key="canvasLocation" x="-99" y="134"/>
         </scene>
     </scenes>
 </document>

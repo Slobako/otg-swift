@@ -55,7 +55,7 @@ class TaskThreeViewController: UIViewController, UICollectionViewDelegate, UICol
         let navigationController = UINavigationController(rootViewController: fullImageViewController)
         fullImageViewController.navigationItem.leftBarButtonItem = createBackButton()
         
-        // Set url of image to bi displayed
+        // Set url of image to be displayed
         if let urlString = arrayOfThumbnails[indexPath.row]?.url {
             fullImageViewController.urlString = urlString
         }

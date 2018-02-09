@@ -22,11 +22,11 @@ struct BirthdayService {
                     completion(jsonDict)
                     print("jsonDict is \(jsonDict)")
                 }
-            } catch {
-                print("jsonSer Error")
+            } catch let error {
+                print("JSONSerialization error: \(error.localizedDescription)")
             }
-        } catch {
-            print("data error")
+        } catch let error {
+            print("Data error: \(error.localizedDescription)")
         }
     }
 }
